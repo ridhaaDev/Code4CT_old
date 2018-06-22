@@ -1,0 +1,131 @@
+//Site wide font
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+// Eric meyers reset for cross-browser uniformity
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Mobile first styling */
+a{
+  color: black;
+}
+
+p{
+  font-size: 18px;
+  text-align: left;
+  letter-spacing: 1.5px;
+  margin: 5px;
+}
+h3{
+
+  text-align: center;
+  font-size: 30px;
+}
+.contactForm{
+  display: block;
+}
+.contactForm input{
+  font-size: 15px;
+  padding: 8px 20px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid grey;
+  display: block;
+  margin: 10px auto;
+}
+textarea{
+  width: 100%;
+}
+
+.contactInfo p img{
+  width: 20px;
+}
+
+@media screen and (min-width:1000px){
+
+
+  .contactSection{
+    margin: 60px 20%;;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+  }
+  .contactForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  button{
+    margin: 0;
+  }
+  textarea{
+    grid-column: 1/4;
+    font-size: 20px;
+  }
+  ::placeholder{
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  h3{
+    grid-column: 1/4;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+  }
+
+
+
+  .contactForm input{
+    padding: 8px 0;
+  }
+
+
+}

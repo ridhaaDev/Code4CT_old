@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/styles.css">
 
@@ -73,7 +74,7 @@
     <div class="carousel-inner">
 
       <div class="item active">
-        <img src="images/Code4CT-homepage.jpg" alt="Los Angeles" style="width:100%;">
+        <img src="images/Code4CT-homepage.jpg" alt="Los Angeles">
         <div class="carousel-caption">
           <div class="mainText">
               <h1>Code for Cape Town</h1>
@@ -88,7 +89,7 @@
       </div>
 
       <div class="item">
-        <img src="images/Code-Camp-2015-Girls-STEM.jpg" alt="Chicago" style="width:100%;">
+        <img src="images/background-image2.png" alt="Chicago">
         <div class="carousel-caption">
           <div class="mainText">
               <h1>Code for Cape Town</h1>
@@ -102,7 +103,7 @@
       </div>
 
       <div class="item">
-        <img src="images/aboutPreview0.jpg" alt="New York" style="width:100%;">
+        <img src="images/Code4CT-homepage.jpg" alt="New York" style="width:100%; height:100%">
         <div class="carousel-caption">
           <div class="mainText">
               <h1>Code for Cape Town</h1>
@@ -258,6 +259,7 @@
                         <p>Andrea thrives on seeing key players in the Code4CT ecosystem discover how they can make the greatest impact. When she is not co-ordinating the Code4CT family she can be found enjoying the diverse cuisine and great outdoors that
                             Cape Town has to offer.</p>
                         <button type="button" name="button" onclick="dropdown()">+</button>
+
             </figure>
 
             <figure class="person3">
@@ -288,35 +290,41 @@
 
 
         <section class="stats">
+
             <section>
                 <div class="line"></div>
-                <h1>3000+</h1>
-
+                <h1 id="cupsOfCoffee">2500</h1>
+                <!-- 3000+ -->
                 <p> Cups of coffee:</p>
+
+
+
             </section>
 
             <section>
                 <div class="line"></div>
-                <h1>780+</h1>
+                <h1 id="girls">280</h1>
+                <!-- 780+ -->
                 <p>Number of girls </p>
             </section>
 
             <section>
                 <div class="line"></div>
-                <h1>3120+</h1>
+                <h1 id="projects">3120+</h1>
                 <p>Projects completed</p>
             </section>
 
             <section>
                 <div class="line"></div>
-                <h1>8765+</h1>
+                <h1 id="hoursCoding">8765+</h1>
                 <p>Hours of coding</p>
             </section>
         </section>
+        <script src="js/counter.js">  </script>
 
         <section class="subscribe">
-          <h1>Subscribe to us</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h1><i class="fas fa-paper-plane"></i></a>Subscribe to us</h1>
+          <p>Individuals and companies may choose to align themselves to our work by becoming a #FriendofCode4CT.</p>
 
           <input type="text" name="" placeholder="Enter your email">
           <button type="button" name="button">Submit</button>
@@ -343,6 +351,55 @@
         <img src="images/carousel16.png"  width="180px"  height="180px"alt="">
       </div>
       </div>
+
+
+      <footer class="secondaryFooter">
+        <div class="footerColumn1">
+          <h3 style="font-size:40px;margin-top:50px">Contact info</h3><br>
+
+          <p><img src="http://code4ct.com/wp-content/uploads/2015/06/email-150x150.png" alt="" width="20px">  info@code4ct.com</p>
+
+        <p><img src="http://code4ct.com/wp-content/uploads/2015/06/telephone-symbol-icon-83700-150x150.png" alt="" width="20px">021 685 0991</p>
+
+        <p><img src="http://code4ct.com/wp-content/uploads/2015/06/648819-star-ratings-512-150x150.png" alt="" width="20px"> Innovate South Africa,<br>
+        403 Old Castle Brewery, 6 Beach Rd,<br>
+        Woodstock, Cape Town, 7915</p>
+        </p>
+        </div>
+        <div class="footerColumn2">
+          <ul style="font-size:30px; margin-top:50px">
+            <li>About us</li>
+            <li>Contact us</li>
+            <li>Blog</li>
+            <li>Testimonials</li>
+            <li>Affiliate program</li>
+          </ul>
+        </div>
+        <div class="footerColumn3">
+          <ul style="font-size:30px; margin-top:50px">
+            <li>Help and support</li>
+            <li>Help center</li>
+            <li>Free simple template</li>
+            <li>Refund policy</li>
+            <li>Report span</li>
+
+          </ul>
+        </div>
+
+      </footer>
+
+      <footer class="primaryFooter">
+        <p>Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
+
+
+
+      <p>Follow us:
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-google-plus-g"></i>
+        <i class="fab fa-pinterest-p"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </footer>
 
 
 
