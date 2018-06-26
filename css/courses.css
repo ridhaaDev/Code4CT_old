@@ -4,44 +4,61 @@
   font-family: 'Roboto Condensed';
 }
 
-h1{
-  font-size: 2em;
-  margin: 3px;
-  text-decoration: underline;
+/* Main Headings */
+.coursesSection h1{
+  padding: 10px;
+  font-size: 2.5em;
 }
 
 
+
 /* recommended streams section */
-.recommendedStreams{
-width: 100%;
+.gridContainer{
+
+margin:0 10%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap:30px;
 }
-.recommendedStreams section{
+.gridContainer h1{
+    font-size: 2em;
+    margin: 3px;
+    text-decoration: underline;
+    text-align: left;
+}
+.gridContainer section{
   margin: 10px;
   border: 1px solid black;
   width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
-.recommendedStreams section p{
+.gridContainer section p{
 padding: 10px;
+text-align: left;
 }
 
 /* Reset button styles */
-.recommendedStreams section button{
+.gridContainer section button{
   padding: 0;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  margin: 0 auto;
+  /* border-radius: 50%; */
+  margin: 0;
+  margin-left: 5px;
 }
 
-.recommendedStreams section button:hover{
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin: 0 auto;
-}
 
 /* Making the recommendedStreams section responsive for desktop */
+@media screen and (max-width:1000px){
+  .gridContainer{
+    display: block;
+  }
+}
+
+
+
+
+
+.coursesSection section section{
+  text-align: left;
+}
