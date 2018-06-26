@@ -105,7 +105,8 @@ nav {
   grid-column: 1/6;
   position: sticky;
   top: 0;
-  border-bottom: 2px solid black; }
+  border-bottom: 2px solid black;
+  z-index: 30; }
 
 @keyframes roll {
   50% {
@@ -367,10 +368,39 @@ nav {
     grid-column: 1/6;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto; }
+    grid-template-rows: auto auto auto;
+    grid-gap: 20px; }
+    .portfolio h1 {
+      width: 550px;
+      grid-column: 1/4; }
+      .portfolio h1 .subUnderline {
+        height: 10px;
+        width: 10%;
+        background-color: red;
+        display: block;
+        margin: 10px;
+        margin-left: 20px; }
+    .portfolio article {
+      grid-column: 1/4;
+      grid-row: 2/3; }
+      .portfolio article p {
+        text-align: left;
+        padding-left: 20px; }
 
   h1 {
-    grid-column: 1/3; } }
+    grid-column: 1/3; }
+
+  .fourImages {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .fourImages figure img {
+      height: 100%; }
+
+  #figure5 {
+    grid-row: 3/4;
+    grid-column: 2/3; }
+    #figure5 img {
+      height: 100%; } }
 .meetOurTeam {
   grid-column: 1/6; }
   .meetOurTeam button {
@@ -380,6 +410,7 @@ nav {
     border-radius: 50%;
     padding: 0; }
   .meetOurTeam figure img {
+    width: 25%;
     display: block;
     margin: 0 auto; }
   .meetOurTeam h3 {
@@ -473,7 +504,7 @@ nav {
   .carousel .sub {
     overflow: hidden;
     height: 180px;
-    width: 5880px;
+    width: 6880px;
     background-color: black;
     /* border:1px solid black; */
     animation-name: thing;
@@ -483,13 +514,14 @@ nav {
     position: relative;
     left: 100%; }
     .carousel .sub img {
+      height: 180px;
       margin-left: 50px;
       margin-right: 50px; }
 
 @keyframes thing {
   100% {
     position: relative;
-    left: -4500px; }
+    left: -6000px; }
   /* 50%{position: relative;left:2000px;} */ }
 .secondaryFooter {
   grid-column: 1/7;
@@ -531,19 +563,19 @@ nav {
     border: 1px solid black; } }
 .contactContainer h2 {
   font-size: 30px; }
-.contactContainer .secondaryNav {
-  background-color: #e38f84;
+
+.secondaryNav {
+  background-color: #ccc;
   width: 100%;
-  height: 400px;
   border: 1px solid black; }
-  .contactContainer .secondaryNav div {
+  .secondaryNav div {
     position: relative;
     margin: 10% auto; }
-    .contactContainer .secondaryNav div a {
+    .secondaryNav div a {
       text-decoration: none;
       letter-spacing: 2px;
       color: black; }
-    .contactContainer .secondaryNav div div {
+    .secondaryNav div div {
       width: 300px;
       text-align: center; }
 

@@ -1,0 +1,47 @@
+/* Site wide font */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+*{
+  font-family: 'Roboto Condensed';
+}
+
+h1{
+  font-size: 2em;
+  margin: 3px;
+  text-decoration: underline;
+}
+
+
+/* recommended streams section */
+.recommendedStreams{
+width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap:30px;
+}
+.recommendedStreams section{
+  margin: 10px;
+  border: 1px solid black;
+  width: 100%;
+}
+.recommendedStreams section p{
+padding: 10px;
+}
+
+/* Reset button styles */
+.recommendedStreams section button{
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.recommendedStreams section button:hover{
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+/* Making the recommendedStreams section responsive for desktop */

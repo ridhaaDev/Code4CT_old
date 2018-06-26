@@ -9,10 +9,10 @@ var projects=document.getElementById("projects");
 var hoursCoding=document.getElementById("hoursCoding");
 
     var timer=setInterval(function(){
-      cupsOfCoffee.innerHTML=timeLeftForCoffee;
-      girls.innerHTML=timeLeftForGirls;
-      projects.innerHTML=timeLeftForProjects;
-      hoursCoding.innerHTML=timeLeftForHours;
+      cupsOfCoffee.innerHTML=timeLeftForCoffee+"+";
+      girls.innerHTML=timeLeftForGirls+"+";
+      projects.innerHTML=timeLeftForProjects+"+";
+      hoursCoding.innerHTML=timeLeftForHours+"+";
 
       if (timeLeftForCoffee===3000) {
       clearInterval(timer);
@@ -20,7 +20,6 @@ var hoursCoding=document.getElementById("hoursCoding");
       girls.innerHTML="780+";
       projects.innerHTML="3120+";
       hoursCoding.innerHTML="8765+";
-
       }
       timeLeftForGirls++;
       timeLeftForCoffee++;
