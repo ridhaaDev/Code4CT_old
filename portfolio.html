@@ -9,8 +9,12 @@ and open the template in the editor.
         <title>Portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <link rel="stylesheet" href="css/master.css">
         <link rel="stylesheet" href="css/portfolio.css">
+        <link rel="stylesheet" href="css/prettyPhoto.css">
+        <script src="js/jquery-1.6.1.min.js"></script>
+          <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
     </head>
     <body>
         <div class="portfolioContainer">
@@ -19,16 +23,16 @@ and open the template in the editor.
             <nav class="mainNav" id="mainNav">
                 <logo><a href="#home" style="margin: 0;padding: 0;background-color: white;"><img src="images/code4ct-logo-1.jpg" class="active" style="border: none"></a></logo>
                 <a href="#home" id="active">Home</a>
-                <a href="#home">About</a>
+                <a href="about.html">About</a>
                 <div class="dropdown">
                     <button class="dropbtn">Courses<i class="fa fa-caret-down"></i></button>
                     <div class="dropdown-content">
-                        <a href="#">Our Courses</a>
+                        <a href="courses.html">Our Courses</a>
                         <a href="#">Curriculum</a>
                     </div>
                 </div>
-                <a href="#home">Portfolio</a>
-                <a href="#home">Contact</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
                 <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()"><i class="fas fa-bars"></i></a>
 
                 <div class="searchBar">
@@ -42,7 +46,7 @@ and open the template in the editor.
             <section class="secondaryNav">
                 <div class="">
                     <div class="">
-                        <h1>PORTFO</h1>
+                        <h1>PORTFOLIO</h1>
                         <div class="traverselinks">
                             <a href="#">Home</a>
                             <i class="fas fa-arrow-right"></i>
@@ -51,7 +55,7 @@ and open the template in the editor.
                     </div>
                 </div>
             </section>
-            
+
             <!--Portfolio heading-->
             <section class="portfolioHeading">
                 <h1>Our Awesome Portfolio</h1>
@@ -60,15 +64,159 @@ and open the template in the editor.
                 </div>
                 <p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam.
-                   
                 </p>
-
                 </p>
             </section>
 
-        </div>
+            <!-- Portfolio images gallery -->
+            <section class="portfolioImages gallery clearfix">
+              <a rel="prettyPhoto[myGallery]" title="Cocoa Pod" href="images/portfolio1(2).JPG">
+          <img alt="picture of cocoa pod split open" src="images/portfolio1(2).JPG" />
+      </a>
+
+      <a rel="prettyPhoto[myGallery]" title="Man with a Parro" href="images/portfolio2.jpg">
+          <img alt="Man with a Parro" src="images/portfolio2.jpg" />
+      </a>
+
+      <a rel="prettyPhoto[myGallery]" title="Red Umbrella" href="images/portfolio3.jpg">
+          <img alt="Red Umbrella" src="images/portfolio3.JPG" />
+      </a>
+
+      <a rel="prettyPhoto[myGallery]" title="Red Umbrella" href="images/portfolio4.jpg">
+          <img alt="Red Umbrella" src="images/portfolio4.JPG" />
+      </a>
+
+      <a rel="prettyPhoto[myGallery]" title="Red Umbrella" href="images/portfolio5.jpg">
+          <img alt="Red Umbrella" src="images/portfolio5.JPG" />
+      </a>
+
+      <a rel="prettyPhoto[myGallery]" title="Red Umbrella" href="images/portfolio6.jpg">
+          <img alt="Red Umbrella" src="images/portfolio6.JPG" />
+      </a>
+
+      <a rel="prettyPhoto[myGallery]" title="Red Umbrella" href="images/portfolio7.jpg">
+          <img alt="Red Umbrella" src="images/portfolio7.JPG" />
+      </a>
+
+      <a rel="prettyPhoto[myGallery]" title="Red Umbrella" href="images/portfolio8.jpg">
+          <img alt="Red Umbrella" src="images/portfolio8.JPG" />
+      </a>
+
+      <a rel="prettyPhoto[myGallery]" title="Red Umbrella" href="images/portfolio9.jpg">
+          <img alt="Red Umbrella" src="images/portfolio9.JPG" />
+      </a>
+
+      <a rel="prettyPhoto[myGallery]" title="Red Umbrella" href="images/portfolio10.jpg">
+          <img alt="Red Umbrella" src="images/portfolio10.JPG" />
+      </a>
+
+      <a rel="prettyPhoto[myGallery]" title="Red Umbrella" href="images/portfolio11.jpg">
+          <img alt="Red Umbrella" src="images/portfolio11.JPG" />
+      </a>
+
+      <a rel="prettyPhoto[myGallery]" title="Red Umbrella" href="images/portfolio12.jpg">
+          <img alt="Red Umbrella" src="images/portfolio12.JPG" />
+      </a>
+
+
+      <div class="nextButtons">
+
+      </div>
+            </section>
+
+
+
+
+
+            <!-- Carousel -->
+            <section class="carousel">
+            <div class="container">
+            <div class="sub">
+            <img src="images/carousel1.png"  alt="">
+            <img src="images/carousel2.png" alt="">
+            <img src="images/carousel3.png"  alt="">
+            <img src="images/carousel4.png"  alt="">
+            <img src="images/carousel5.png" alt="">
+            <img src="images/carousel6.png" alt="">
+            <img src="images/carousel7.png" alt="">
+            <img src="images/carousel8.png"  alt="">
+            <img src="images/carousel9.png"  alt="">
+            <img src="images/carousel10.png" alt="">
+            <img src="images/carousel11.png" alt="">
+            <img src="images/carousel12.png" alt="">
+            <img src="images/carousel13.png" alt="">
+            <img src="images/carousel14.png" alt="">
+            <img src="images/carousel15.png"  alt="">
+            <img src="images/carousel16.png" alt="">
+            </div>
+             </div>
+            </section>
+
+
+
+
+
+            <footer class="secondaryFooter">
+              <article class="footerColumn1">
+                <h2>Contact</h2>
+
+            <p>
+            <img src="http://code4ct.com/wp-content/uploads/2015/06/648819-star-ratings-512-150x150.png">Physical address: Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd,<br> Woodstock, Cape Town, 7915<br>
+            <img src="http://code4ct.com/wp-content/uploads/2015/06/email-150x150.png" alt="">Email: info@code4ct.com<br>
+            <img src="http://code4ct.com/wp-content/uploads/2015/06/telephone-symbol-icon-83700-150x150.png" alt="">Tel: 021 685 0991<br>
+            </p>
+              </article>
+              <article class="footerColumn2">
+                <h2>Company</h2>
+                <ul>
+                  <li>About us</li>
+                  <li>Contact us</li>
+                  <li>Blog</li>
+                  <li>Testimonials</li>
+                  <li>Affiliate programme</li>
+                </ul>
+              </article>
+              <article class="footerColumn3">
+                <h2>Help and Support</h2>
+                <ul>
+                  <li>Help Centre</li>
+                  <li>Free sample templates</li>
+                  <li>Refund policy</li>
+                  <li>Report span</li>
+                </ul>
+              </article>
+            </footer>
+
+              <div class="bottomFooter">
+            <footer class="primaryFooter">
+
+
+
+              <p>  Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
+
+              <p>Follow us:<i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-pinterest-p"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                            <i class="fab fa-linkedin-in"></i>
+              </p>
+
+
+            </footer>
+
+
+
+
+        <script type="text/javascript" charset="utf-8">
+               $(document).ready(function(){
+                 $("a[rel^='prettyPhoto']").prettyPhoto();
+               });
+             </script>
+
+
+             </div>
     </body>
 </html>

@@ -1,4 +1,4 @@
-/* 
+/*
     Created on : Jun 28, 2018, 8:36:03 PM
     Author     : FUJITSU
 */
@@ -12,7 +12,7 @@ a{
     background-color:#ccc;
       display: block;
     margin: 10px auto;
-    
+
 }
 #centerLineInner{
     width:20%;
@@ -34,6 +34,13 @@ a{
     .portfolioHeading{
         margin: 50px 5%;
     }
+    .portfolioImages{
+        margin: 50px 5%;
+    }
+
+    .portfolioImages a img{
+      height: 100%;
+    }
 }
 
 
@@ -41,5 +48,13 @@ a{
 @media screen and (min-width:1000px){
     .portfolioHeading{
         margin: 50px 15%;
+    }
+    .portfolioImages{
+        margin: 50px 15%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .portfolioImages a img{
+      height: 100%;
     }
 }
