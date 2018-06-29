@@ -4,6 +4,9 @@
 */
 .mainContainer {
   margin: 0; }
+  body{
+    overflow-x: hidden;
+  }
 
 /*Site wide font and reset*/
 * {

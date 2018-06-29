@@ -5,6 +5,7 @@
 .mainContainer{
     margin: 0;
 }
+
 /*Site wide font and reset*/
 *{
     font-family:  sans-serif;
@@ -700,6 +701,9 @@ ul li{
         margin: 0 15%;
         width: 70%;
         color: white;
+        .fab{
+          margin-left: 20px;
+        }
     }
 
 
