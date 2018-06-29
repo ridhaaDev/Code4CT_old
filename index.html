@@ -1,334 +1,338 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>Home Page</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <script src="js/smoothScroll.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/styles.css">
-   </head>
-   <body>
-      <div class="mainContainer" id="mainContainer">
-         <nav id="mainNav">
-            <div class="topnav" id="myTopnav">
-               <ul>
-                  <li> <a href="#home" class="active" style="padding-top: 10px;padding-bottom: 0px; padding-right: 21px;padding-left: 22px;">
-                     <img src="images\code4ct-logo-1.jpg" height="50px" alt=""> </a>
-                  </li>
-                  <li> <a href="#home">Home</a></li>
-                  <!-- <li> <a href="#news">About</a></li> -->
-                  <li><a href="#about">About</a></li>
-                  <ul>
-                     <li>
-                        <div class="dropdown">
-                           <span><a href="">Courses</a></span>
-                           <div class="dropdown-content">
-                              <a href="">Our Courses</a>
-                              <a href="">Curriculum</a>
-                           </div>
-                        </div>
-                     </li>
-                  </ul>
-                  <li><a href="#contact">Portfolio</a></li>
-                  <li><a href="#about">Contact</a></li>
-                  <li>
-                     <div class="searchBar">
-                        <button type="button" name="button"><i class="fas fa-search"></i></button>
-                        <input type="text" name="" value="" placeholder="Search...">
-                     </div>
-                  </li>
-               </ul>
-               <!-- <input type="text" name="" value="">
-                  <button type="button" name="button"><i class="fas fa-search"></i></button> -->
-               <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()" onload="spinner()">
-               <i class="fa fa-bars" id="moreLinks"></i>
-               </a>
-            </div>
+<!--To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/master.css">
+    </head>
+    <body>
+        <div class="mainContainer">
+            <!--NavBar-->
+            <nav class="mainNav" id="mainNav">
+                <logo><a href="#home" style="margin: 0;padding: 0;background-color: white;"><img src="images/code4ct-logo-1.jpg" class="active" style="border: none"></a></logo>
+                <a href="#home" id="active">Home</a>
+                <a href="about.html">About</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Courses<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="courses.html">Our Courses</a>
+                        <a href="#">Curriculum</a>
+                    </div>
+                </div>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()"><i class="fas fa-bars"></i></a>
+
+                <div class="searchBar">
+                    <input type="search" placeholder="Search..." id="searchField">
+                    <button id="searchButton"><i class="fas fa-search"></i></button>
+                </div>
+            </nav>
             <script src="js/script.js"></script>
-         </nav>
-         <section class="mainHeader container" id="mainHeader">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-               <!-- Indicators -->
-               <ol class="carousel-indicators">
-                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#myCarousel" data-slide-to="1"></li>
-                  <li data-target="#myCarousel" data-slide-to="2"></li>
-               </ol>
-               <!-- Wrapper for slides -->
-               <div class="carousel-inner">
-                  <div class="item active">
-                     <img src="images/Code4CT-homepage.jpg" alt="Los Angeles">
-                     <div class="carousel-caption">
-                        <div class="mainText">
-                           <h1>Code for Cape Town</h1>
-                           <p>We want to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry. We want high school girls to have an enabling environment to imagine and
-                              create new technology that is relevant to a South African context.
-                           </p>
-                           <button type="button" name="button">Start Coding</button>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="item">
-                     <img src="images/background-image2.png" alt="Chicago">
-                     <div class="carousel-caption">
-                        <div class="mainText">
-                           <h1>Code for Cape Town</h1>
-                           <p>We want to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry. We want high school girls to have an enabling environment to imagine and
-                              create new technology that is relevant to a South African context.
-                           </p>
-                           <button type="button" name="button">Start Coding</button>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="item">
-                     <img src="images/Code4CT-homepage.jpg" alt="New York" style="width:100%; height:100%">
-                     <div class="carousel-caption">
-                        <div class="mainText">
-                           <h1>Code for Cape Town</h1>
-                           <p>We want to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry. We want high school girls to have an enabling environment to imagine and
-                              create new technology that is relevant to a South African context.
-                           </p>
-                           <button type="button" name="button">Start Coding</button>
-                        </div>
-                        <div class="slideShowTransition">
-                           <!-- <button type="button" name="button" id="slide1" onclick="slideChange1()"><</button>
-                              <button type="button" name="button" onclick="slideChange2()" id="slide2">|</button>
-                              <button type="button" name="button" onclick="slideChange3()" id="slide3">></button>
-                              <script src="js/slideShow.js"></script> -->
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- Left and right controls -->
-               <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-               <span class="glyphicon glyphicon-chevron-left"></span>
-               <span class="sr-only">Previous</span>
-               </a>
-               <a class="right carousel-control" href="#myCarousel" data-slide="next">
-               <span class="glyphicon glyphicon-chevron-right"></span>
-               <span class="sr-only">Next</span>
-               </a>
+
+            <!--Slider-->
+            <section class="slider" id="home">
+                <div class="mainHeading">
+                    <h1 id="mainHeading">Code for Cape Town</h1>
+                    <p id="mainParagraph">We want to see young women empowered to leverage technology for social
+                        innovation, so that there is greater diversity in the African tech industry.
+                        We want high school girls to have an enabling environment to imagine </p>
+                    <div class="mainButtons">
+                        <button>READ MORE</button>
+                        <button id="donateButton">START CODING</button>
+                    </div>
+                </div>
+            </section>
+            <!--Slider buttons-->
+            <div class="sliderButtons">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-         </section>
-         <section class="aboutPreview">
-            <h1>Who we are?</h1>
-            <div class="imageGrid">
-               <img src="images/aboutPreview.jpg" alt="">
-               <img src="images/aboutPreview.jpg" alt="">
-               <img src="images/aboutPreview.jpg" alt="">
-               <img src="images/aboutPreview.jpg" alt="">
-            </div>
-            <p>Code for Cape Town (Code4CT) is a programme that introduces young girls to basic web building skills and exposes them to opportunities in the Information and Communication Technologies (ICT) sector. Participants are trained in web development,
-               design principles, as well as courses in professional development. Code4CT aims to inspire a generation of young girls who are well-prepared with a toolkit of technical and soft skills in order to achieve high impact in the workplace.
-               <br><br> These are skills that everyone should have. Even if you have no intention of becoming a professional coder, you will benefit from knowing how to think in this way in this increasingly computerized economy. A growing number of
-               permanent job positions that use information technology to deliver a product or a service are becoming available in the local economy. It is estimated that nearly 75000 such jobs will come online in South Africa within the next five years.
-               These digital jobs will mostly be driven by the ICT, Business Process Outsourcing (BPO), and the financial services industries. These are the fastest growing sectors in our economy. They are also the sectors that have the highest demand
-               for entry-level digital skills.
-            </p>
-            <button type="button" name="button">Read More</button>
-         </section>
-         <section class="icons">
-            <div class="codingSection">
-               <img src="images/computerImage.png" alt="">
-               <h1>Coding</h1>
-               <h3>Learn how to build your own websites using HTML, CSS, JavaScript & JQuery. Go on to explore exciting modules from game development to user experience design.</h3>
-            </div>
-            <div class="communicationSection">
-               <img src="images/volumeImage.png" alt="">
-               <h1>Communication</h1>
-               <h3>Learn how to pitch ideas, represent yourself online, communicate professionally and work with online collaboration tools.</h3>
-            </div>
-            <div class="problemSolvingSection">
-               <img src="images/toolsImage.png" alt="">
-               <h1>Problem Solving</h1>
-               <h3>Apply your coding skills to issues you are interested in. You will learn how to tackle complex problems using the design thinking process.
-               </h3>
-            </div>
-            <div class="careerGuidancceSection">
-               <img src="images/certificateImage.png" alt="">
-               <h1>Career Guidance</h1>
-               <h3>Explore future options by meeting different companies doing exciting things with technology. We offer career testing and connect you to our network of study institutions and bursary programs.</h3>
-            </div>
-         </section>
-         <section class="portfolio">
-            <h1>
-               Our awesome portfolio
-               <div class="subUnderline"></div>
-            </h1>
-            <article class="">
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-               </p>
-            </article>
-            <div class="fourImages">
-               <figure id="portfolio1">
-                  <img src="images/portfolio1.jpg" alt="">
-               </figure>
-               <figure id="portfolio2">
-                  <img src="images/portfolio2.jpeg" alt="">
-               </figure>
-               <figure id="portfolio3">
-                  <img src="images/portfolio3.png" alt="">
-               </figure>
-               <figure id="portfolio4">
-                  <img src="images/portfolio4.png" alt="">
-               </figure>
-            </div>
-            <figure id="figure5">
-               <img src="images/portfolio1.jpg" alt="">
-            </figure>
-         </section>
-         <section class="meetOurTeam">
-            <h1>Meet our team</h1>
-            <figure class="person1">
-               <img src="images/person1.png" alt="">
-               <h3>Emma Dicks</h3>
-               <h4>Founder and Director</h4>
-               <hr>
-               <p>
-                  Emma is passionate about providing high quality education that enables young people to bring innovative ideas to life and play an active role in South Africa’s economy. Aside from her work at Code4CT, Emma advocates for tech education through acting as
-                  an Ambassador for Africa Code Week and coordinating the #eSkills4Girls network in Africa.
-               </p>
-               <p id="hidden" class="hidden">
-                  Emma has been recognised on numerous prestigious listing including: Fast Company’s 30 Under 30, Mail & Guardian Top 200 South Africans, Brightest Young Minds, Destiny Magazine’s Power of 40, VentureBurn’s Top 31 South African Entrepreneurs and Marie Claire’s
-                  Game Changing Women. She has been awarded the Queen’s Young Leaders Award for her work towards social justice which she received in June 2015 from her Majesty the Queen at Buckingham Palace.
-               </p>
-               <script src="js/dropdown.js"></script>
-               <button type="button" name="button" onclick="dropdown()" id="dropdownButton">+</button>
-            </figure>
-            <figure class="person2">
-               <img src="images/person2.png" alt="">
-               <h3>Andrea Petersen</h3>
-               <h4>
-               Operations Lead
-               <h4>
-               <hr>
-               <p>Andrea thrives on seeing key players in the Code4CT ecosystem discover how they can make the greatest impact. When she is not co-ordinating the Code4CT family she can be found enjoying the diverse cuisine and great outdoors that
-                  Cape Town has to offer.
-               </p>
-               <button type="button" name="button" onclick="dropdown()">+</button>
-            </figure>
-            <figure class="person3">
-               <img src="images/person3.png" alt="">
-               <h3>Tegan Crous</h3>
-               <h4>Program Lead</h4>
-               <hr>
-               <p>Tegan heads up the high school program. She is spurred on by a heart for people and seeing them pursue their potential in a safe, fun and nurturing environment. She has experience working with youth in various formats and found herself
-                  in the tech industry quite by mistake, but with no regrets.
-               </p>
-               <p id="hidden" class="hidden">
-                  <em>No more Information.</em>
-               </p>
-               <button type="button" name="button" onclick="dropdown()">+</button>
-            </figure>
-            <figure class="person4">
-               <img src="images/person4.png" alt="">
-               <h3>Tracy-Anne Sikenjana</h3>
-               <h4>Leadership Program Coordinator</h4>
-               <hr>
-               <p>Tracy joined the Code4CT program in 2015 and then matriculated from Rustenburg Girls’ High in 2016. She decided to intern with Code4CT to give back to an organisation that had a large impact on her personal growth and development.</p>
-               <button type="button" name="button" onclick="dropdown()">+</button>
-            </figure>
-         </section>
-         <section class="stats">
-            <section>
-               <div class="line"></div>
-               <h1 id="cupsOfCoffee">2500</h1>
+
+            <!--About preview-->
+            <section class="aboutPreview">
+                <h1>Who we are?</h1>
+                <div class="lineOuter">
+                    <div class="lineInner"></div>
+                </div>
+
+                <p><strong>Code for Cape Town (Code4CT) is a programme that
+                        introduces young girls to basic web building skills and
+                        exposes them to opportunities in the Information and
+                        Communication Technologies (ICT) sector.</strong><br><br>
+                    Participants are trained in web development,
+                    design principles, as well as courses in professional
+                    development. Code4CT aims to inspire a generation of young
+                    girls who are well-prepared with a toolkit of technical and
+                    soft skills in order to achieve high impact in the workplace.
+                    <br><br> These are skills that everyone should have. Even if
+                    you have no intention of becoming a professional coder, you
+                    will benefit from knowing how to think in this way in this
+                    increasingly computerized economy. A growing number of
+                    permanent job positions that use information technology to
+                    deliver a product or a service are becoming available in
+                    the local economy. It is estimated that nearly 75000 such
+                    jobs will come online in South Africa within the next five
+                    years.
+
+                </p>
+                <div class="imageGrid">
+                    <img src="images/aboutPreview.jpg" alt="">
+                    <img src="images/aboutPreview.jpg" alt="">
+                    <img src="images/aboutPreview.jpg" alt="">
+                    <img src="images/aboutPreview.jpg" alt="">
+                </div>
+                <button type="button" name="button">Read More</button>
+            </section>
+
+
+            <section class="icons">
+                <div class="codingSection">
+                    <img src="images/computerImage.png" alt="">
+                    <h1>Coding</h1>
+                    <h3>Learn how to build your own websites using HTML, CSS, JavaScript & JQuery. Go on to explore exciting modules from game development to user experience design.</h3>
+                </div>
+                <div class="communicationSection">
+                    <img src="images/volumeImage.png" alt="">
+                    <h1>Communication</h1>
+                    <h3>Learn how to pitch ideas, represent yourself online, communicate professionally and work with online collaboration tools.</h3>
+                </div>
+                <div class="problemSolvingSection">
+                    <img src="images/toolsImage.png" alt="">
+                    <h1>Problem Solving</h1>
+                    <h3>Apply your coding skills to issues you are interested in. You will learn how to tackle complex problems using the design thinking process.
+                    </h3>
+                </div>
+                <div class="careerGuidancceSection">
+                    <img src="images/certificateImage.png" alt="">
+                    <h1>Career Guidance</h1>
+                    <h3>Explore future options by meeting different companies doing exciting things with technology. We offer career testing and connect you to our network of study institutions and bursary programs.</h3>
+                </div>
+            </section>
+
+            <!--Portfolio section-->
+            <section class="portfolio">
+                <h1>Our awesome portfolio</h1>
+                <div class="lineOuter">
+                    <div class="lineInner"></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.</p>
+                <div class="portfolioImages">
+                    <div class="fourImages">
+                        <figure id="portfolio1">
+                            <img src="images/portfolio1.jpg" alt="">
+                        </figure>
+                        <figure id="portfolio2">
+                            <img src="images/portfolio2.jpeg" alt="">
+                        </figure>
+                        <figure id="portfolio3">
+                            <img src="images/portfolio3.png" alt="">
+                        </figure>
+                        <figure id="portfolio4">
+                            <img src="images/portfolio4.png" alt="">
+                        </figure>
+                    </div>
+                    <figure class="largeImage">
+                        <img src="images/portfolio1.jpg" alt="">
+                    </figure>
+                </div>
+            </section>
+
+            <!--Meet our team section-->
+            <section class="meetOurTeam">
+                <h1>Meet our team</h1>
+                <div class="lineOuter">
+                    <div class="lineInner"></div>
+                </div>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+
+
+                <div class="teamGrid">
+
+
+                    <figure class="person1">
+                        <img src="images/person1.png" alt="">
+                        <h3>Emma Dicks</h3>
+                        <h4>Founder and Director</h4>
+                        <hr>
+                        <p>
+                            Emma is passionate about providing high quality education that enables young people to bring innovative ideas to life and play an active role in South Africa�s economy. Aside from her work at Code4CT, Emma advocates for tech education through acting as
+                            an Ambassador for Africa Code Week and coordinating the #eSkills4Girls network in Africa.
+                        </p>
+                        <p id="hidden" class="hidden1">
+                            Emma has been recognised on numerous prestigious listing including: Fast Company�s 30 Under 30, Mail & Guardian Top 200 South Africans, Brightest Young Minds, Destiny Magazine�s Power of 40, VentureBurn�s Top 31 South African Entrepreneurs and Marie Claire�s
+                            Game Changing Women. She has been awarded the Queen�s Young Leaders Award for her work towards social justice which she received in June 2015 from her Majesty the Queen at Buckingham Palace.
+                        </p>
+                       
+                        <button type="button" name="button" id="dropdownButton" id="person1Button">+</button>
+                         <script src="js/dropdown.js"></script>
+                    </figure>
+                    <figure class="person2">
+                        <img src="images/person2.png" alt="">
+                        <h3>Andrea Petersen</h3>
+                        <h4>
+                            Operations Lead
+                        </h4>
+                        <hr>
+                        <p>Andrea thrives on seeing key players in the Code4CT ecosystem discover how they can make the greatest impact. When she is not co-ordinating the Code4CT family she can be found enjoying the diverse cuisine and great outdoors that
+                            Cape Town has to offer.
+                        </p>
+                        <button type="button" name="button" onclick="dropdown()">+</button>
+                    </figure>
+                    <figure class="person3">
+                        <img src="images/person3.png" alt="">
+                        <h3>Tegan Crous</h3>
+                        <h4>Program Lead</h4>
+                        <hr>
+                        <p>Tegan heads up the high school program. She is spurred on by a heart for people and seeing them pursue their potential in a safe, fun and nurturing environment. She has experience working with youth in various formats and found herself
+                            in the tech industry quite by mistake, but with no regrets.
+                        </p>
+                        <p id="hidden" class="hidden">
+                            <em>No more Information.</em>
+                        </p>
+                        <button type="button" name="button"onclick="dropdown()">+</button>
+                    </figure>
+                    <figure class="person4">
+                        <img src="images/person4.png" alt="">
+                        <h3>Tracy-Anne Sikenjana</h3>
+                        <h4>Leadership Program Coordinator</h4>
+                        <hr>
+                        <p>Tracy joined the Code4CT program in 2015 and then matriculated from Rustenburg Girls� High in 2016. She decided to intern with Code4CT to give back to an organisation that had a large impact on her personal growth and development.</p>
+                        <button type="button" name="button" onclick="dropdown()">+</button>
+                    </figure>
+                </div>
+
+            </section>
+
+
+
+            <section class="stats">
+          <section>
+             <div class="line"></div>
+             <h1 id="cupsOfCoffee">2500</h1>
                <!-- 3000+ -->
-               <p> Cups of coffee:</p>
-            </section>
-            <section>
-               <div class="line"></div>
-               <h1 id="girls">280</h1>
+             <p> Cups of coffee:</p>
+          </section>
+          <section>
+             <div class="line"></div>
+             <h1 id="girls">280</h1>
                <!-- 780+ -->
-               <p>Number of girls </p>
-            </section>
-            <section>
-               <div class="line"></div>
-               <h1 id="projects">3120+</h1>
-               <p>Projects completed</p>
-            </section>
-            <section>
-               <div class="line"></div>
-               <h1 id="hoursCoding">8765+</h1>
-               <p>Hours of coding</p>
-            </section>
-         </section>
-         <script src="js/counter.js"></script>
-         <section class="subscribe">
-            <h1><i class="fas fa-paper-plane"></i></a>Subscribe to us</h1>
-            <p>Individuals and companies may choose to align themselves to our work by becoming a #FriendofCode4CT.</p>
-            <input type="text" name="" placeholder="Enter your email">
-            <button type="button" name="button">Submit</button>
-         </section>
-         <div class="carousel">
-            <div class="sub">
-               <img src="images/carousel1.png" alt="">
-               <img src="images/carousel2.png" alt="">
-               <img src="images/carousel3.png" alt="">
-               <img src="images/carousel4.png" alt="">
-               <img src="images/carousel5.png" alt="">
-               <img src="images/carousel6.png" alt="">
-               <img src="images/carousel7.png" alt="">
-               <img src="images/carousel8.png" alt="">
-               <img src="images/carousel9.png" alt="">
-               <img src="images/carousel10.png" alt="">
-               <img src="images/carousel11.png" alt="">
-               <img src="images/carousel12.png" alt="">
-               <img src="images/carousel13.png" alt="">
-               <img src="images/carousel14.png" alt="">
-               <img src="images/carousel15.png" alt="">
-               <img src="images/carousel16.png" alt="">
-            </div>
-         </div>
-         <footer class="secondaryFooter">
-            <div class="footerColumn1">
-               <h3 style="font-size:40px;margin-top:50px">Contact info</h3>
-               <br>
-               <p><img src="http://code4ct.com/wp-content/uploads/2015/06/email-150x150.png" alt="" width="20px"> info@code4ct.com</p>
-               <p><img src="http://code4ct.com/wp-content/uploads/2015/06/telephone-symbol-icon-83700-150x150.png" alt="" width="20px">021 685 0991</p>
-               <p><img src="http://code4ct.com/wp-content/uploads/2015/06/648819-star-ratings-512-150x150.png" alt="" width="20px"> Innovate South Africa,<br> 403 Old Castle Brewery, 6 Beach Rd,<br> Woodstock, Cape Town, 7915</p>
-               </p>
-               <hr class="style-seven">
-            </div>
-            <div class="footerColumn2">
-               <ul style="font-size:30px; margin-top:50px">
-                  <li>About us</li>
-                  <li>Contact us</li>
-                  <li>Blog</li>
-                  <li>Testimonials</li>
-                  <li>Affiliate program</li>
-               </ul>
-               <hr class="style-seven">
-            </div>
-            <div class="footerColumn3">
-               <ul style="font-size:30px; margin-top:50px">
-                  <li>Help and support</li>
-                  <li>Help center</li>
-                  <li>Free simple template</li>
-                  <li>Refund policy</li>
-                  <li>Report span</li>
-               </ul>
-               <hr class="style-seven">
-            </div>
-         </footer>
-         <footer class="primaryFooter">
-            <p>Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
-            <p>Follow us:
-               <i class="fab fa-facebook-f"></i>
-               <i class="fab fa-twitter"></i>
-               <i class="fab fa-google-plus-g"></i>
-               <i class="fab fa-pinterest-p"></i>
-               <i class="fab fa-linkedin-in"></i>
-         </footer>
-         <footer id="upIcon">
-            <a href="#mainContainer"><i class="fas fa-angle-double-up"></i></a>
-         </footer>
-      </div>
-   </body>
-   </html>
+             <p>Number of girls </p>
+          </section>
+          <section>
+             <div class="line"></div>
+             <h1 id="projects">3120+</h1>
+             <p>Projects completed</p>
+          </section>
+          <section>
+             <div class="line"></div>
+             <h1 id="hoursCoding">8765+</h1>
+             <p>Hours of coding</p>
+          </section>
+       </section>
+       <script src="js/counter.js"></script>
+
+       <!-- Subscribe section -->
+       <section class="subscribe">
+         <h1><i class="fas fa-paper-plane" style="margin-right:10px;color:#e38f84"></i>SUBSRCIBE TO US</h1>
+         <p>Join us and become a #FriendofCode4CT.</p>
+         <table width="320px">
+           <tr>
+             <td width="200px"><input type="text"></td>
+             <td><button>Submit</button></td>
+           </tr>
+         </table>
+       </section>
+
+       <!-- Carousel -->
+<section class="carousel">
+   <div class="container">
+     <div class="sub">
+       <img src="images/carousel1.png"  alt="">
+       <img src="images/carousel2.png" alt="">
+       <img src="images/carousel3.png"  alt="">
+       <img src="images/carousel4.png"  alt="">
+       <img src="images/carousel5.png" alt="">
+       <img src="images/carousel6.png" alt="">
+       <img src="images/carousel7.png" alt="">
+       <img src="images/carousel8.png"  alt="">
+       <img src="images/carousel9.png"  alt="">
+       <img src="images/carousel10.png" alt="">
+       <img src="images/carousel11.png" alt="">
+       <img src="images/carousel12.png" alt="">
+       <img src="images/carousel13.png" alt="">
+       <img src="images/carousel14.png" alt="">
+       <img src="images/carousel15.png"  alt="">
+       <img src="images/carousel16.png" alt="">
+     </div>
+        </div>
+</section>
+
+
+<footer class="secondaryFooter">
+  <article class="footerColumn1">
+    <h2>Contact</h2>
+
+<p>
+<img src="http://code4ct.com/wp-content/uploads/2015/06/648819-star-ratings-512-150x150.png">Physical address: Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd,<br> Woodstock, Cape Town, 7915<br>
+<img src="http://code4ct.com/wp-content/uploads/2015/06/email-150x150.png" alt="">Email: info@code4ct.com<br>
+<img src="http://code4ct.com/wp-content/uploads/2015/06/telephone-symbol-icon-83700-150x150.png" alt="">Tel: 021 685 0991<br>
+</p>
+  </article>
+  <article class="footerColumn2">
+    <h2>Company</h2>
+    <ul>
+      <li>About us</li>
+      <li>Contact us</li>
+      <li>Blog</li>
+      <li>Testimonials</li>
+      <li>Affiliate programme</li>
+    </ul>
+  </article>
+  <article class="footerColumn3">
+    <h2>Help and Support</h2>
+    <ul>
+      <li>Help Centre</li>
+      <li>Free sample templates</li>
+      <li>Refund policy</li>
+      <li>Report span</li>
+    </ul>
+  </article>
+</footer>
+
+  <div class="bottomFooter">
+<footer class="primaryFooter">
+
+
+
+  <p>  Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
+
+  <p>Follow us:<i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-google-plus-g"></i>
+                <i class="fab fa-linkedin-in"></i>
+  </p>
+
+
+</footer>
+  </div>
+
+</div>
+    </body>
+</html>

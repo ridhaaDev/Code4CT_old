@@ -1,181 +1,74 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Portfolio Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/master.css">
+        <link rel="stylesheet" href="css/portfolio.css">
+    </head>
+    <body>
+        <div class="portfolioContainer">
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/portfolio.css">
-  </head>
-  <body>
+            <!--NavBar-->
+            <nav class="mainNav" id="mainNav">
+                <logo><a href="#home" style="margin: 0;padding: 0;background-color: white;"><img src="images/code4ct-logo-1.jpg" class="active" style="border: none"></a></logo>
+                <a href="#home" id="active">Home</a>
+                <a href="#home">About</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Courses<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Our Courses</a>
+                        <a href="#">Curriculum</a>
+                    </div>
+                </div>
+                <a href="#home">Portfolio</a>
+                <a href="#home">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()"><i class="fas fa-bars"></i></a>
 
-    <div class="portfolioContainer">
-    <nav id="mainNav">
-      <div class="topnav" id="myTopnav">
-        <ul>
-         <li>   <a href="#home" class="active" style="padding-top: 10px;padding-bottom: 0px; padding-right: 21px;padding-left: 22px;">
-         <img src="images\code4ct-logo-1.jpg" height="50px" alt=""> </a></li>
-         <li> <a href="#home">Home</a></li>
-         <!-- <li> <a href="#news">About</a></li> -->
-           <li><a href="#about">About</a></li>
-         <ul>
-           <li><div class="dropdown">
- <span><a href="">Courses</a></span>
- <div class="dropdown-content">
-   <a href="">Our Courses</a>
-   <a href="">Curriculum</a>
- </div>
-</div></li>
-         </ul>
-
-         <li><a href="#contact">Portfolio</a></li>
-         <li><a href="#about">Contact</a></li>
-
-         <li>
-           <div class="searchBar">
-             <button type="button" name="button"><i class="fas fa-search"></i></button>
-             <input type="text" name="" value="" placeholder="Search...">
-           </div>
-         </li>
-        </ul>
-
-         <!-- <input type="text" name="" value="">
-         <button type="button" name="button"><i class="fas fa-search"></i></button> -->
+                <div class="searchBar">
+                    <input type="search" placeholder="Search..." id="searchField">
+                    <button id="searchButton"><i class="fas fa-search"></i></button>
+                </div>
+            </nav>
+            <script src="js/script.js"></script>
 
 
-        <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()" onload="spinner()">
-          <i class="fa fa-bars" id="moreLinks"></i>
-        </a>
-      </div>
-      <script src="js/script.js"></script>
-  </nav>
+            <section class="secondaryNav">
+                <div class="">
+                    <div class="">
+                        <h1>PORTFO</h1>
+                        <div class="traverselinks">
+                            <a href="#">Home</a>
+                            <i class="fas fa-arrow-right"></i>
+                            <a href="#">Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--Portfolio heading-->
+            <section class="portfolioHeading">
+                <h1>Our Awesome Portfolio</h1>
+                <div id="centerLineOuter">
+                    <div id="centerLineInner"></div>
+                </div>
+                <p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.
+                   
+                </p>
 
+                </p>
+            </section>
 
-
-  <section class="secondaryNav">
-    <div class="" >
-      <h1>OUR PORTFOLIO</h1>
-      <div class="traverselinks" style="margin-top:20px">
-        <a href="#">Pages</a>
-      <i class="fas fa-arrow-right"></i>
-        <a href="#">Portfolio</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="portfolioIntro">
-    <section class="headingIntro">
-      <h3 style="font-size:30px">Our awesome portfolio</h3>
-      <div class="mainUnderline">
-        <div class="subUnderline"></div>
-      </div>
-      </section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </section>
-
-  <section class="portfolioSection">
-    <img src="images/background-image2.png" alt="">
-    <img src="images/background-image2.png" alt="">
-    <img src="images/background-image2.png" alt="">
-    <img src="images/background-image2.png" alt="">
-
-
-    <img src="images/background-image2.png" alt="">
-    <img src="images/background-image2.png" alt="">
-    <img src="images/background-image2.png" alt="">
-    <img src="images/background-image2.png" alt="">
-
-    <img src="images/background-image2.png" alt="">
-    <img src="images/background-image2.png" alt="">
-    <img src="images/background-image2.png" alt="">
-    <img src="images/background-image2.png" alt="">
-
-    <div class="sliderSection">
-      <div class="slideButtons">
-
-
-      <button type="button" name="button">1</button>
-      <button type="button" name="button">2</button>
-      <button type="button" name="button">3</button>
-      <button type="button" name="button">4</button>
-      <button type="button" name="button">></button>
-    </div>
-  </div>
-  </section>
-
-  <div class="carousel">
-  <div class="sub">
-    <img src="images/carousel1.png"alt="">
-    <img src="images/carousel2.png"  alt="">
-    <img src="images/carousel3.png"  alt="">
-    <img src="images/carousel4.png"  alt="">
-    <img src="images/carousel5.png"  alt="">
-    <img src="images/carousel6.png"  alt="">
-    <img src="images/carousel7.png"  alt="">
-    <img src="images/carousel8.png"  alt="">
-    <img src="images/carousel9.png"  alt="">
-    <img src="images/carousel10.png"  alt="">
-    <img src="images/carousel11.png"  alt="">
-    <img src="images/carousel12.png"  alt="">
-    <img src="images/carousel13.png"  alt="">
-    <img src="images/carousel14.png"  alt="">
-    <img src="images/carousel15.png"  alt="">
-    <img src="images/carousel16.png"  alt="">
-  </div>
-  </div>
-
-  <footer class="secondaryFooter">
-    <div class="footerColumn1">
-      <h3 style="font-size:40px;margin-top:50px">Contact info</h3><br>
-
-      <p><img src="http://code4ct.com/wp-content/uploads/2015/06/email-150x150.png" alt="" width="20px">  info@code4ct.com</p>
-
-    <p><img src="http://code4ct.com/wp-content/uploads/2015/06/telephone-symbol-icon-83700-150x150.png" alt="" width="20px">021 685 0991</p>
-
-    <p><img src="http://code4ct.com/wp-content/uploads/2015/06/648819-star-ratings-512-150x150.png" alt="" width="20px"> Innovate South Africa,<br>
-    403 Old Castle Brewery, 6 Beach Rd,<br>
-    Woodstock, Cape Town, 7915</p>
-    </p>
-    </div>
-    <div class="footerColumn2">
-      <ul style="font-size:30px; margin-top:50px">
-        <li>About us</li>
-        <li>Contact us</li>
-        <li>Blog</li>
-        <li>Testimonials</li>
-        <li>Affiliate program</li>
-      </ul>
-    </div>
-    <div class="footerColumn3">
-      <ul style="font-size:30px; margin-top:50px">
-        <li>Help and support</li>
-        <li>Help center</li>
-        <li>Free simple template</li>
-        <li>Refund policy</li>
-        <li>Report span</li>
-
-      </ul>
-    </div>
-
-  </footer>
-
-  <footer class="primaryFooter">
-    <p>Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
-
-
-
-  <p>Follow us:
-    <i class="fab fa-facebook-f"></i>
-    <i class="fab fa-twitter"></i>
-    <i class="fab fa-google-plus-g"></i>
-    <i class="fab fa-pinterest-p"></i>
-    <i class="fab fa-linkedin-in"></i>
-  </footer>
-
-
-    </div>
-
-  </body>
+        </div>
+    </body>
 </html>
