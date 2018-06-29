@@ -1,137 +1,128 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Contact Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/master.css">
-    <link rel="stylesheet" href="css/contact.css">
-  </head>
-  <body>
-
-    <div class="contactContainer">
-
-
-        <!--NavBar-->
-        <nav class="mainNav" id="mainNav">
-            <logo><a href="#home" style="margin: 0;padding: 0;background-color: white;"><img src="images/code4ct-logo-1.jpg" class="active" style="border: none"></a></logo>
-            <a href="#home" id="active">Home</a>
-            <a href="#home">About</a>
+   <head>
+      <meta charset="utf-8">
+      <title>Contact Page</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/master.css">
+      <link rel="stylesheet" href="css/contact.css">
+   </head>
+   <body>
+      <div class='scrolltop'>
+         <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+      </div>
+      <script src="js/topButton.js"></script>
+      <div class="contactContainer theTop">
+         <!--NavBar-->
+         <nav class="mainNav" id="mainNav">
+            <logo><a href="index.html" style="margin: 0;padding: 0;background-color: white;"><img src="images/code4ct-logo-1.jpg" class="active" style="border: none"></a></logo>
+            <a href="index.html" id="active">Home</a>
+            <a href="about.html">About</a>
             <div class="dropdown">
-                <button class="dropbtn">Courses<i class="fa fa-caret-down"></i></button>
-                <div class="dropdown-content">
-                    <a href="#">Our Courses</a>
-                    <a href="#">Curriculum</a>
-                </div>
+               <button class="dropbtn">Courses<i class="fa fa-caret-down"></i></button>
+               <div class="dropdown-content">
+                  <a href="courses.html">Our Courses</a>
+                  <a href="#">Curriculum</a>
+               </div>
             </div>
-            <a href="#home">Portfolio</a>
-            <a href="#home">Contact</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="#theTop">Contact</a>
             <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()"><i class="fas fa-bars"></i></a>
-
             <div class="searchBar">
-                <input type="search" placeholder="Search..." id="searchField">
-                <button id="searchButton"><i class="fas fa-search"></i></button>
+               <input type="search" placeholder="Search..." id="searchField">
+               <button id="searchButton"><i class="fas fa-search"></i></button>
             </div>
-        </nav>
-        <script src="js/script.js"></script>
-
-  <section class="secondaryNav">
-    <div class="">
-      <div class="">
-      <h1>CONTACT US</h1>
-      <div class="traverselinks">
-        <a href="#">Home</a>
-      <i class="fas fa-arrow-right"></i>
-        <a href="#">Contact</a>
+         </nav>
+         <script src="js/script.js"></script>
+         <section class="secondaryNav">
+            <div class="">
+               <div class="">
+                  <h1>CONTACT US</h1>
+                  <div class="traverselinks">
+                     <a href="#">Home</a>
+                     <i class="fas fa-arrow-right"></i>
+                     <a href="#">Contact</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <div class="contactSection" id="theTop">
+            <section class="contactForm">
+               <h1>
+                  Send us a Message
+                  <div class="lineOuter">
+                     <div class="lineInner"></div>
+                  </div>
+               </h1>
+               <input type="text" name="" value="" placeholder="Your name">
+               <input type="text" name="" value="" placeholder="Your email">
+               <input type="text" name="" value="" placeholder="Phone Number">
+               <textarea name="name" rows="8" cols="80" placeholder="Your message"></textarea>
+               <button type="button" name="button">Send email</button>
+            </section>
+            <section class="contactInfo">
+               <h1>
+                  Contact info
+                  <div class="lineOuter">
+                     <div class="lineInner"></div>
+                  </div>
+               </h1>
+               <p>
+                  <br><br>
+                  <img src="http://code4ct.com/wp-content/uploads/2015/06/email-150x150.png" alt="" style="display:inline">  info@code4ct.com
+               </p>
+               <p><img src="http://code4ct.com/wp-content/uploads/2015/06/telephone-symbol-icon-83700-150x150.png" alt="" style="display:inline">021 685 0991</p>
+               <p><img src="http://code4ct.com/wp-content/uploads/2015/06/648819-star-ratings-512-150x150.png" alt="" style="display:inline"> Innovate South Africa,<br>
+                  403 Old Castle Brewery, 6 Beach Rd,<br>
+                  Woodstock, Cape Town, 7915
+               </p>
+               </p>
+            </section>
+         </div>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1655.321978657781!2d18.448715!3d-33.924562!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe3d98aec2cc1ee1c!2sUrbantek!5e0!3m2!1sen!2sus!4v1529619648381" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
+         <footer class="secondaryFooter">
+            <article class="footerColumn1">
+               <h2>Contact</h2>
+               <p>
+                  <img src="http://code4ct.com/wp-content/uploads/2015/06/648819-star-ratings-512-150x150.png">Physical address: Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd,<br> Woodstock, Cape Town, 7915<br>
+                  <img src="http://code4ct.com/wp-content/uploads/2015/06/email-150x150.png" alt="">Email: info@code4ct.com<br>
+                  <img src="http://code4ct.com/wp-content/uploads/2015/06/telephone-symbol-icon-83700-150x150.png" alt="">Tel: 021 685 0991<br>
+               </p>
+            </article>
+            <article class="footerColumn2">
+               <h2>Company</h2>
+               <ul>
+                  <li>About us</li>
+                  <li>Contact us</li>
+                  <li>Blog</li>
+                  <li>Testimonials</li>
+                  <li>Affiliate programme</li>
+               </ul>
+            </article>
+            <article class="footerColumn3">
+               <h2>Help and Support</h2>
+               <ul>
+                  <li>Help Centre</li>
+                  <li>Free sample templates</li>
+                  <li>Refund policy</li>
+                  <li>Report span</li>
+               </ul>
+            </article>
+         </footer>
+         <div class="bottomFooter">
+            <footer class="primaryFooter">
+               <p>  Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
+               <p>Follow us:<i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-pinterest-p"></i>
+                  <i class="fab fa-google-plus-g"></i>
+                  <i class="fab fa-linkedin-in"></i>
+               </p>
+            </footer>
+         </div>
       </div>
-      </div>
-    </div>
-  </section>
-
-<div class="contactSection">
-
-    <section class="contactForm">
-      <h3>Send us a Message
-        <div class="lineOuter">
-            <div class="lineInner"></div>
-        </div></h3>
-
-
-  <input type="text" name="" value="" placeholder="Your name">
-  <input type="text" name="" value="" placeholder="Your email">
-  <input type="text" name="" value="" placeholder="Phone Number">
-  <textarea name="name" rows="8" cols="80" placeholder="Your message"></textarea>
-  <button type="button" name="button">Send email</button>
-
-    </section>
-    <section class="contactInfo">
-      <h3>Contact info <div class="lineOuter">
-          <div class="lineInner"></div>
-      </div></h3>
-      <p><img src="http://code4ct.com/wp-content/uploads/2015/06/email-150x150.png" alt="" style="display:inline">  info@code4ct.com</p>
-
-<p><img src="http://code4ct.com/wp-content/uploads/2015/06/telephone-symbol-icon-83700-150x150.png" alt="" style="display:inline">021 685 0991</p>
-
-
-<p><img src="http://code4ct.com/wp-content/uploads/2015/06/648819-star-ratings-512-150x150.png" alt="" style="display:inline"> Innovate South Africa,<br>
-  403 Old Castle Brewery, 6 Beach Rd,<br>
-  Woodstock, Cape Town, 7915</p>
-</p>
-
-
-
-
-
-    </section>
-</div>
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1655.321978657781!2d18.448715!3d-33.924562!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe3d98aec2cc1ee1c!2sUrbantek!5e0!3m2!1sen!2sus!4v1529619648381" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-<footer class="secondaryFooter">
-  <article class="footerColumn1">
-    <h2>Contact</h2>
-
-<p>
-<img src="http://code4ct.com/wp-content/uploads/2015/06/648819-star-ratings-512-150x150.png">Physical address: Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd,<br> Woodstock, Cape Town, 7915<br>
-<img src="http://code4ct.com/wp-content/uploads/2015/06/email-150x150.png" alt="">Email: info@code4ct.com<br>
-<img src="http://code4ct.com/wp-content/uploads/2015/06/telephone-symbol-icon-83700-150x150.png" alt="">Tel: 021 685 0991<br>
-</p>
-  </article>
-  <article class="footerColumn2">
-    <h2>Company</h2>
-    <ul>
-      <li>About us</li>
-      <li>Contact us</li>
-      <li>Blog</li>
-      <li>Testimonials</li>
-      <li>Affiliate programme</li>
-    </ul>
-  </article>
-  <article class="footerColumn3">
-    <h2>Help and Support</h2>
-    <ul>
-      <li>Help Centre</li>
-      <li>Free sample templates</li>
-      <li>Refund policy</li>
-      <li>Report span</li>
-    </ul>
-  </article>
-</footer>
-  <div class="bottomFooter">
-<footer class="primaryFooter">
-  <p>  Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
-
-  <p>Follow us:<i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-pinterest-p"></i>
-                <i class="fab fa-google-plus-g"></i>
-                <i class="fab fa-linkedin-in"></i>
-  </p>
-</footer>
-
-</div>
-    </div>
-  </body>
+   </body>
 </html>

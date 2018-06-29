@@ -16,17 +16,17 @@
     <!--NavBar-->
     <nav class="mainNav" id="mainNav">
         <logo><a href="#home" style="margin: 0;padding: 0;background-color: white;"><img src="images/code4ct-logo-1.jpg" class="active" style="border: none"></a></logo>
-        <a href="#home" id="active">Home</a>
-        <a href="#home">About</a>
+        <a href="index.html" id="active">Home</a>
+        <a href="about.html">About</a>
         <div class="dropdown">
             <button class="dropbtn">Courses<i class="fa fa-caret-down"></i></button>
             <div class="dropdown-content">
-                <a href="#">Our Courses</a>
+                <a href="courses.html">Our Courses</a>
                 <a href="#">Curriculum</a>
             </div>
         </div>
-        <a href="#home">Portfolio</a>
-        <a href="#home">Contact</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">&#9776;</a>
 
         <div class="searchBar">
@@ -114,66 +114,65 @@
           </div>
 
           <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Code4CT is a diverse company made up of strong-minded individuals. Our core team consists of:
           </p>
 
 
           <div class="teamGrid">
+            <div class="person1">
+              <img src="images/person1.jpg" alt="">
+
+              <div class="description">
+                <h2>Emma Dicks</h2>
+                <p><em>Founder and Director</em></p>
+                <p>Emma is passionate about providing high quality education that enables young people to bring innovative ideas to life and play an active role in South Africa's economy.</p>
+              </div>
+
+            </div>
+
+            <div class="person2">
+              <img src="images/person2.jpg" alt="">
+
+              <div class="description">
+            <h2> Andrea Petersen</h2>
+  <p><em>Operations Lead</em></p>
+  <p>Andrea thrives on seeing key players in the Code4CT ecosystem discover how they can make the greatest impact.When she is not co-ordinating the Code4CT family she can be found enjoying the diverse cuisine and great outdoors that Cape Town has to offer.</p>
+
+              </div>
+            </div>
+
+            <div class="person3">
+              <img src="images/person3.jpg" alt="">
+
+              <div class="description">
+                <h2>Tegan Crous</h2>
+  <p><em>Program Lead</em></p>
+
+  <p>Tegan heads up the high school program.
+
+  She is spurred on by a heart for people and seeing them pursue their potential in a safe, fun and nurturing environment.</p>
+
+              </div>
+            </div>
+
+            <div class="person4">
+              <img src="images/person4.jpg" alt="">
+
+              <div class="description">
+                <h2>Tracy-Anne Sikenjana</h2>
+                <p><em>Leadership Program Coordinator</em></p>
+                <p>
+
+                Tracy joined in 2015 and matriculated from Rustenburg Girls' High in 2016. She interned with Code4CT to give back to an organisation that had a large impact on her personal growth and development.</p>
+              </div>
+            </div>
 
 
-              <figure class="person1">
-                  <img src="images/person1.png" alt="">
-                  <h3>Emma Dicks</h3>
-                  <h4>Founder and Director</h4>
-                  <hr>
-                  <p>
-                      Emma is passionate about providing high quality education that enables young people to bring innovative ideas to life and play an active role in South Africa�s economy. Aside from her work at Code4CT, Emma advocates for tech education through acting as
-                      an Ambassador for Africa Code Week and coordinating the #eSkills4Girls network in Africa.
-                  </p>
-                  <p id="hidden" class="hidden">
-                      Emma has been recognised on numerous prestigious listing including: Fast Company�s 30 Under 30, Mail & Guardian Top 200 South Africans, Brightest Young Minds, Destiny Magazine�s Power of 40, VentureBurn�s Top 31 South African Entrepreneurs and Marie Claire�s
-                      Game Changing Women. She has been awarded the Queen�s Young Leaders Award for her work towards social justice which she received in June 2015 from her Majesty the Queen at Buckingham Palace.
-                  </p>
-                  <script src="js/dropdown.js"></script>
-                  <button type="button" name="button" onclick="dropdown()" id="dropdownButton">+</button>
-              </figure>
-              <figure class="person2">
-                  <img src="images/person2.png" alt="">
-                  <h3>Andrea Petersen</h3>
-                  <h4>
-                      Operations Lead
-                  </h4>
-                  <hr>
-                  <p>Andrea thrives on seeing key players in the Code4CT ecosystem discover how they can make the greatest impact. When she is not co-ordinating the Code4CT family she can be found enjoying the diverse cuisine and great outdoors that
-                      Cape Town has to offer.
-                  </p>
-                  <button type="button" name="button" onclick="dropdown()">+</button>
-              </figure>
-              <figure class="person3">
-                  <img src="images/person3.png" alt="">
-                  <h3>Tegan Crous</h3>
-                  <h4>Program Lead</h4>
-                  <hr>
-                  <p>Tegan heads up the high school program. She is spurred on by a heart for people and seeing them pursue their potential in a safe, fun and nurturing environment. She has experience working with youth in various formats and found herself
-                      in the tech industry quite by mistake, but with no regrets.
-                  </p>
-                  <p id="hidden" class="hidden">
-                      <em>No more Information.</em>
-                  </p>
-                  <button type="button" name="button"onclick="dropdown()">+</button>
-              </figure>
-              <figure class="person4">
-                  <img src="images/person4.png" alt="">
-                  <h3>Tracy-Anne Sikenjana</h3>
-                  <h4>Leadership Program Coordinator</h4>
-                  <hr>
-                  <p>Tracy joined the Code4CT program in 2015 and then matriculated from Rustenburg Girls� High in 2016. She decided to intern with Code4CT to give back to an organisation that had a large impact on her personal growth and development.</p>
-                  <button type="button" name="button" onclick="dropdown()">+</button>
-              </figure>
+
+
           </div>
 
       </section>
-
 
 
 
@@ -207,7 +206,7 @@
         <p>Join us and become a #FriendofCode4CT.</p>
         <table width="320px">
           <tr>
-            <td width="200px"><input type="text"></td>
+            <td width="200px"><input type="text" placeholder="enter your email"></td>
             <td><button>Submit</button></td>
           </tr>
         </table>

@@ -13,7 +13,6 @@ a{
 
 h3{
     text-align: center;
-    font-size: 30px;
 }
 .contactForm{
     display: block;
@@ -84,11 +83,12 @@ textarea{
         padding-left: 10px;
     }
 
-    h3{
+    h1{
         grid-column: 1/4;
         float: left;
         text-align: left;
-        font-size: 30px;
+        
+        /* font-size: 30px; */
     }
 
 
