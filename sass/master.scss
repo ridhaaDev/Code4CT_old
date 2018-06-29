@@ -693,6 +693,12 @@ ul li{
         padding:50px 5%;
         display: grid;
         grid-template-columns:1fr 1fr 1fr;
+
+        article{
+          h2{
+            margin-bottom: 10px;
+          }
+        }
     }
 
     .primaryFooter{
@@ -823,4 +829,12 @@ ul li{
 	-moz-transition: 0.5s;
 	-webkit-transition: 0.5s;
 	-o-transition: 0.5s;
+}
+
+
+::placeholder{
+  padding-left: 5px;
+}
+input{
+    padding-left: 5px;
 }
